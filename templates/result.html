@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="../static/result.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align:center;">SEARCHED RESULTS</h2>
+        <ul>
+          <li class="table-header">
+            <div class="col col-1">Searched Results</div>
+          </li>
+            {% for i in range(len) %} 
+                <li class="table-row">
+                <div class="col col-1" data-label="Searched Results">{{list_pdf_files_[i]}}</div>
+                </li>
+            {%endfor%} 
+            {% if len == 0 %} 
+                <h3>No results found</h3>
+            {% endif %} 
+        </ul>
+      </div>
+</body>
+</html>
+
+
+

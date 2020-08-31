@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="../static/search.css">
+</head>
+<body>
+	<div id="cover">
+        <form action="{{ url_for('searchpdf')}}" method="POST">
+          <div class="tb">
+            <div class="td"><input type="text" placeholder="Search" required name="search_string"></div>
+            <div class="td" id="s-cover">
+              <button type="submit">
+                <div id="s-circle"></div>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
+
+
+
