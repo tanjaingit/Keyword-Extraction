@@ -1,5 +1,4 @@
 from flask import Flask,render_template,url_for,request
-import pickle
 import PyPDF2 as pdf
 import flashtext
 from flashtext import KeywordProcessor
